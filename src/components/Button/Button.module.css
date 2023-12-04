@@ -1,0 +1,51 @@
+.Button {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.42;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background-color: var(--primary-light-color);
+  color: var(--light-color);
+  transition: background-color var(--transition);
+}
+
+.Button:hover,
+.Button:focus {
+  background-color: var(--primary-dark-color);
+}
+
+.ButtonS {
+  padding: 12px 50px;
+}
+
+.ButtonM {
+  height: 48px;
+  margin-left: 18px;
+  padding-left: 44px;
+  padding-right: 44px;
+}
+
+.ButtonL {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: auto;
+}
+
+.ButtonLink {
+  display: block;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--primary-light-color);
+}
+
+.ButtonLink:hover,
+.ButtonLink:focus {
+  color: var(--primary-dark-color);
+  background-color: transparent;
+}
