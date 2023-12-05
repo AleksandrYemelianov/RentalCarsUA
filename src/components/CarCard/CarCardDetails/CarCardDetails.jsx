@@ -8,8 +8,8 @@ export const CarCardDetails = ({ car }) => {
     const carInfo = collectCardInfo(car)
 
     return (
-        <div className={css.carDetailsContainer}>
-            {carInfo.map(info => <p key={nanoid()} className={css.carDetailsText}>{info}</p>)}
-        </div>
+        <ul className={css.carDetailsContainer}>
+            {carInfo.map(info => <li key={nanoid()} className={css.carDetailsText}>{info}</li>)}
+        </ul>
     )
 };

@@ -1,0 +1,1 @@
+export const HOME_DESCRIPTION = 'A car rental app is an online platform that allows users to rent cars for personal or business use. The app provides an easy-to-use interface for searching and booking, as well as storing your favorite cars.'

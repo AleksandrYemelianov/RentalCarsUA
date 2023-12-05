@@ -31,7 +31,7 @@ export const CarsItem = ({ car }) => {
 
     return (
         <>
-            <div className={css.cardContainer}>
+            <li className={css.cardContainer}>
                 <div className={css.imgWrapper}>
                     <img src={car.img || car.photoLink} alt={car.model} width='274' height='268'/>
                     <button onClick={handleClick} type='button' className={css.cardIconButton}>
@@ -43,7 +43,7 @@ export const CarsItem = ({ car }) => {
                 <CarCardDescription car={car} />
                 <CarCardDetails car={car} />
                 <Button onClick={handleModalToggle} size={'l'} text={'Learn more'} />
-            </div>
+            </li>
             {showModal && createPortal(
                 <ModalBackdrop car={car} onClose={handleModalToggle} />,
                 document.body)

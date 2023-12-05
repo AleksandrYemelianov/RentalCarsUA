@@ -11,10 +11,10 @@ export const FavoritesList = () => {
 
     return (
         <>
-            <div className={css.listContainer}>
+            <ul className={css.listContainer}>
                 {cars.length === 0 && <NotFoundItem text={FAVORITES_IS_EMPTY}/>}
                 {cars.map(car => <CarsItem key={car.id} car={car} />)}
-            </div>
+            </ul>
         </>
     )
 };

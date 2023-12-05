@@ -3,7 +3,6 @@ import { Button } from 'components/Button/Button'
 import makes from '../../resource/makes.json';
 
 import css from './FormFilter.module.css';
-import { getCars } from 'redux/cars/carsSelectors';
 import { useDispatch, useSelector } from 'react-redux';
 import { rentalPrice } from 'utils/rentalPrice';
 import { Select } from 'components/FormElement/Select/Select';
@@ -20,7 +19,6 @@ export const FormFilter = () => {
     const [price, setPrice] = useState('');
     const [mileageFrom, setMileageFrom] = useState('')
     const [mileageTo, setMileageTo] = useState('')
-    const cars = useSelector(getCars);
     const filters = useSelector(getFilters)
 
     useEffect(() => {
@@ -32,7 +30,7 @@ export const FormFilter = () => {
         }
    }, [filters])
 
-    const priceSelect = rentalPrice(cars)
+    const priceSelect = rentalPrice()
     
     const handleBrandChange = (e) => {
         setBrand(e.target.value);

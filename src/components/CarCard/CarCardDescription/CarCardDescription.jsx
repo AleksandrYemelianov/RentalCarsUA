@@ -9,7 +9,7 @@ export const CarCardDescription = ({ car: { model, make, year, rentalPrice } }) 
 
     return (
         <div className={css.cardDescriptionWrapper}>
-            <p className={css.cardDescriptionTitle}>{make}<span className={css.cardDescriptionAccent}>{currentModel},</span>{year}</p>
+            <h2 className={css.cardDescriptionTitle}>{make}<span className={css.cardDescriptionAccent}>{currentModel},</span>{year}</h2>
             <p>{rentalPrice}</p>
         </div>
     )

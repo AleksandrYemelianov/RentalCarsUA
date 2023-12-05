@@ -30,11 +30,11 @@ export const CarsList = () => {
 
     return (
         <>
-            <div className={css.listContainer}>
+            <ul className={css.listContainer}>
                 {loading && <Loader />}
                 {cars.length === 0 && !loading && <NotFoundItem text={NOT_FOUND_ITEM}/>}
                 {cars.map(car => <CarsItem key={car.id} car={car} />)}
-            </div>
+            </ul>
             { visibleLoadMore && <Button onClick={handleClick} size={'link'} text={'Load more'} />}
         </>
     )
