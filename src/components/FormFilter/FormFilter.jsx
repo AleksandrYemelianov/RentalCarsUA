@@ -28,7 +28,11 @@ export const FormFilter = () => {
             setMileageFrom(filters.mileageFrom)
             setMileageTo(filters.mileageTo)
         }
-   }, [filters])
+    }, [filters])
+
+    const sortMake = makes.sort()
+    
+    console.log(sortMake)
 
     const priceSelect = rentalPrice()
     
@@ -67,7 +71,7 @@ export const FormFilter = () => {
                     data={makes}
                     value={brand}
                     onChange={handleBrandChange}
-                    text={'Enter the text'}
+                    text={'Select make'}
                 />
             </Label>
             <Label text={'Price / 1 hour'}>
